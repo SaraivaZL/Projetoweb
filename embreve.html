@@ -8,62 +8,97 @@
     <meta name="description" content="Projeto web">
     <meta name="Author" content="Gustavo, Anderson, Matheus Almeida e Matheus Saraiva">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="imagem/favicon.ico" type="image/x-icon">
+
     <title>Conteudo Filmes</title>
 </head>
 <body>
    <header id="topo">
-       <img class="imagem" src="imagem/Pipoca 3D.png" alt="Logo do Cinema Ação">
+    <div id= "acessibilidade">
+        <ul id="atalhos">
+            <li><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Ir para o conteúdo [1]</a></li>
+            <li><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Ir para o menu [2]</a></li>
+            <li><a href="#rodape" accesskey="3" title="Ir poara o rodape">Ir para o rodape [3]
+            <li id="pgacess"><a href="acessibilidade.html" title="Ir para a pagina de acessibilidade">acessibilidade</a></li> 
+            <li class="contraste"><a href="JavaScript:void(0);" id="contraste">Contraste</a></li>
+            <li class="contraste"><a href="JavaScript:void(0);" id="sem contraste">sem contraste</a></li>
+            <li class="fonte"><a href="JavaScript:void(0);" id="aumentar">A +</a></li>
+            <li class="fonte"><a href="JavaScript:void(0);" id="diminuir">A -</a></li>
+        </ul>    
+    </div>
+        <img class="imagem" src="imagem/Pipoca 3D.png" alt="Logo do Cinema Ação">
    
    <nav>
+        <label for="bt_menu"><img src="imagem/menu.png"> <alt="menu">
+        </label>
+        <input type="checkbox" id="bt_menu">
        <ul id="menu">
-           <li><a href="index.html">Início</a></li>
-           <li><a href="emcartaz.html">Em Cartaz</a></li> 
-           <li><a href="embreve.html">Em Breve</a></li>
-           <Li><a href="trailers.html"> Trailers</a></Li>
-           <Li><a href="curiosidades.html">Curiosidades</a></Li>
-
-
+            <li><a href="index.html">Início</a></li>
+            <li><a href="emcartaz.html">Em Cartaz</a></li> 
+            <li><a href="embreve.html">Em Breve</a></li>
+            <Li><a href="trailers.html"> Trailers</a></Li>
+            <Li><a href="curiosidades.html">Curiosidades</a></Li>
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
        </ul>
    </nav>
+   <div vw class="enabled">
+			<div vw-access-button class="active"></div>
+			<div vw-plugin-wrapper>
+			  <div class="vw-plugin-top-wrapper"></div>
+			</div>
+		      </div>
+		      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+		      <script>
+			new window.VLibras.Widget('https://vlibras.gov.br/app');
+		      </script>
    </header>
    <main id="conteudo">
+        <ul id="breadcrumb">
+            <li><a href="index.html"> Inicio</a></li>
+            <li>Em breve</li>
+
        <h1 id="titulo">
            EM BREVE
        </h1>
     
-    <h3> TOP GUN - MAVERICK. PRÉ-ESTRÉIAS Dia 21 Até Dia 25 E Estréia Dia 26 de Maio Nos Cinemas. PRÉ-VENDA de INGRESSOS, LIBERADA!</h3>
+    <h3> TOP GUN - MAVERICK. ESTRÉIA HOJE!!!</h3>
 
     <img class="imagem" src="imagem/top.jpg" alt= "Top Gun: Maverick  post oficial"><br>
 
-    <p>Depois de mais de 30 anos de serviço como um dos principais aviadores da Marinha, Pete "Maverick" Mitchell está de volta, rompendo os limites como um piloto de testes corajoso. No mundo contemporâneo das guerras tecnológicas, Maverick enfrenta drones e prova que o fator humano ainda é essencial.</p><br>
+    <p class="paragrafo">Depois de mais de 30 anos de serviço como um dos principais aviadores da Marinha, Pete "Maverick" Mitchell está de volta, rompendo os limites como um piloto de testes corajoso. No mundo contemporâneo das guerras tecnológicas, Maverick enfrenta drones e prova que o fator humano ainda é essencial.</p><br>
 
-    <h3> JURASSIC WORLD - DOMÍNIO. 2 de Junho Nos Cinemas</h3>
+    <h3> JURASSIC WORLD - DOMÍNIO. 2 de Junho Nos Cinemas. PRÉ-VENDA de Ingressos, LIBERADA!</h3>
 
     <img class="imagem" src="imagem/jurasc.jpg" alt="Jurassic World: Domínio  post oficial"><br>
 
-    <p>A sequência do filme Jurassic World, a sexta parcela da série Jurassic Park e o terceiro filme da série Jurassic World.</p><br>
+    <p class="paragrafo">A sequência do filme Jurassic World, a sexta parcela da série Jurassic Park e o terceiro filme da série Jurassic World.</p><br>
 
     <h3> LIGHTYEAR - 16 de Junho Nos Cinemas.</h3>
 
     <img class="imagem" src="imagem/buz.jpg" alt="Lightyear  post oficial"><br>
 
-    <p>Lightyear é uma futura animação americana de ficção científica de ação produzido pela Pixar Animation Studios e Walt Disney Pictures.</p><br>
+    <p class="paragrafo">Lightyear é uma futura animação americana de ficção científica de ação produzido pela Pixar Animation Studios e Walt Disney Pictures.</p><br>
 
     <h3>THOR - AMOR E TROVÃO. 7 de Julho Nos Cinemas.</h3>
 
     <img class="imagem" src="imagem/thor.jpg" alt="Thor: Amor e Trovão  post oficial"><br>
 
-    <p>Thor: Love and Thunder é um futuro filme estadunidense de super-herói baseado no personagem Thor da Marvel Comics. Produzido pela Marvel Studios e distribuído pela Walt Disney Studios Motion Pictures, será a sequência direta de Thor: Ragnarok, e o vigésimo nono filme do Universo Cinematográfico Marvel.</p><br>
+    <p class="paragrafo">Thor: Love and Thunder é um futuro filme estadunidense de super-herói baseado no personagem Thor da Marvel Comics. Produzido pela Marvel Studios e distribuído pela Walt Disney Studios Motion Pictures, será a sequência direta de Thor: Ragnarok, e o vigésimo nono filme do Universo Cinematográfico Marvel.</p><br>
 
    </main>
-   <footer id="Rodape">
+   <footer id="rodape">
        <h4>Mapa do site</h4>
        <ul id="Mapa">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="emcartaz.html">Em Cartaz</a></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="emcartaz.html">Em Cartaz</a></li> 
             <li><a href="embreve.html">Em Breve</a></li>
-            <li><a href="trailers.html">Trailers</a></li>
-            <li><a href="curiosidades.html">Curiosidades</a></li>
+            <Li><a href="trailers.html"> Trailers</a></Li>
+            <Li><a href="curiosidades.html">Curiosidades</a></Li>
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        
+            
        </ul>
        <p>Desenvolvido Anderson, Gustavo, Matheus Almeida e Matheus Saraiva<br>
        Todos os direitos reservados &copy; 2022.</p>     

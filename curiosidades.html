@@ -8,59 +8,93 @@
     <meta name="description" content="Projeto web">
     <meta name="Author" content="Gustavo, Anderson, Matheus Almeida e Matheus Saraiva">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="imagem/favicon.ico" type="image/x-icon">
     <title>Conteudo Filmes</title>
 </head>
 <body>
    <header id="topo">
+    <div id= "acessibilidade">
+        <ul id="atalhos">
+            <li><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Ir para o conteúdo [1]</a></li>
+            <li><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Ir para o menu [2]</a></li>
+            <li><a href="#rodape" accesskey="3" title="Ir poara o rodape">Ir para o rodape [3]
+            <li id="pgacess"><a href="acessibilidade.html" title="Ir para a pagina de acessibilidade">acessibilidade</a></li> 
+            <li class="contraste"><a href="JavaScript:void(0);" id="contraste">Contraste</a></li>
+            <li class="contraste"><a href="JavaScript:void(0);" id="sem contraste">sem contraste</a></li>
+            <li class="fonte"><a href="JavaScript:void(0);" id="aumentar">A +</a></li>
+            <li class="fonte"><a href="JavaScript:void(0);" id="diminuir">A -</a></li>
+        </ul>    
+    </div>
        <img class="imagem" src="imagem/Pipoca 3D.png" alt="Logo do Cinema Ação">
    
    <nav>
+        <label for="bt_menu"><img src="imagem/menu.png"> <alt="menu">
+        </label>
+        <input type="checkbox" id="bt_menu">
        <ul id="menu">
-           <li><a href="index.html">Início</a></li>
-           <li><a href="emcartaz.html">Em Cartaz</a></li> 
-           <li><a href="embreve.html">Em Breve</a></li>
-           <Li><a href="trailers.html"> Trailers</a></Li>
-           <Li><a href="curiosidades.html">Curiosidades</a></Li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="emcartaz.html">Em Cartaz</a></li> 
+            <li><a href="embreve.html">Em Breve</a></li>
+            <Li><a href="trailers.html"> Trailers</a></Li>
+            <Li><a href="curiosidades.html">Curiosidades</a></Li>
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
 
 
        </ul>
    </nav>
+   <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
    </header>
    <main id="conteudo">
+            <ul id="breadcrumb">
+                <li><a href="index.html"> Inicio</a></li>
+                <li>Curiosidades</li>
        <h1 id="titulo">
            NOTICIAS
        </h1><br>
        
-    <h2>principais noticias:</h2><br>   
+    <h2>Principais noticias:</h2><br>   
     
     <h3>Venom 3 | Sony confirma produção</h3>
 
     <img class="imagem" src="imagem/venom_hlgVPfn_YzPJh0H.jpeg" alt= "venom olhando o homem aranha"><br>
 
-    <p>
+    <p class="paragrafo">
         A Sony confirmou a produção do terceiro filme de Venom durante a CinemaCon 2022. O estúdio, no entanto, revelou apenas o logo do novo filme, que não tem previsão de estreia. A produtora Amy Pascal já tinha dado a entender que um terceiro filme aconteceria.</p><br>
 
     <h3> Tom Cruise fala de não usar dublês para gravar cenas de ação</h3>
 
     <img class="imagem" src="imagem/tom-cruise-em-entrevista-do-the-graham-norton-show_400883_36.jpeg" alt="foto tom Cruise"><br>
 
-    <p>Um dos fatos mais conhecidos sobre a carreira de Tom Cruise é de que ele não utiliza dublês nas cenas de ação, gravando sempre ele mesmo. Em entrevista durante sua participação no The Graham Norton Show, o astro comentou sobre esse processo, admitindo que, apesar dos perigos e de já ter quebrado muitos ossos, considera estimulante filmar as cenas perigosas.</p><br>
+    <p class="paragrafo">Um dos fatos mais conhecidos sobre a carreira de Tom Cruise é de que ele não utiliza dublês nas cenas de ação, gravando sempre ele mesmo. Em entrevista durante sua participação no The Graham Norton Show, o astro comentou sobre esse processo, admitindo que, apesar dos perigos e de já ter quebrado muitos ossos, considera estimulante filmar as cenas perigosas.</p><br>
 
-    <h3> Depois de Doutor Estranho 2, confira os próximos filmes do Universo Cinematográfico Marvel.</h3>
+    <h3> Depois de Doutor Estranho 2, confira os próximos filmes do Universo Cinematográfico Marvel.</h3><br>
+
+    <img class="imagem" src="imagem/Proximos.jpeg" alt= "proximos filmes em imagem da marvel"><br>
+    
     <ul>
-        <li>Thor: Amor e trovao (7 de julho de 2022)</li>
-        <p>Thor: Amor e Trovão é a quarta aventura solo do Thor (Chris Hemsworth) no Universo Cinematográfico Marvel e vai contar com o retorno de Taika Waititi na direção depois de Thor: Ragnarok. Na história, Thor deve enfrentar uma de suas maiores ameaças: Gorr, o Carniceiro de Deus, interpretado por Christian Bale. Teremos a volta de Jane Foster (Natalie Portman), agora empunhando o Mjölnir reparado e recebendo os poderes do Thor depois que o protagonista se torna indigno, além da presença dos Guardiões da Galáxia.</p><br>
-        <li>PANTERA NEGRA: WAKANDA PARA SEMPRE (10 DE NOVEMBRO DE 2022)</li>
-        <p>Pantera Negra: Wakanda Para Sempre é a aguardada continuação de Pantera Negra, dirigido por Ryan Coogler. O filme vai expandir a sociedade de Wakanda com o retorno de Shuri (Letitia Wright), Nakia (Lupita Nyong'o), Ramonda (Angela Bassett), Okoye (Danai Gurira) e M'Baku (Winston Duke). Depois da morte do ator Chadwick Boseman, que interpretava o protagonista rei T'Challa, foi confirmado que eles não vão reformular o personagem na sequência e ele nem mesmo vai surgir em CGI, como foi especulado.</p><br>
-        <li>HOMEM-FORMIGA E A VESPA: QUANTUMANIA (16 DE FEVEREIRO DE 2023)</li>
-        <p>Homem-Formiga e a Vespa: Quantumania continua acompanhando Scott Lang (Paul Rudd) e Hope van Dyne (Evangeline Lilly) depois de Homem-Formiga, Homem-Formiga e a Vespa e, claro, Vingadores: Ultimato. O filme terá como principal antagonista o vilão Kang, o Conquistador, interpretado por Jonathan Majors – sendo que uma variante dele, chamada "Aquele que Permanece" e também vivida por Majors, foi introduzida na série Loki. Kang provavelmente será o próximo grande vilão do MCU depois de Thanos, então o terceiro filme do Homem-Formiga deve ser bastante importante para a trama do multiverso.</p><br>
+    <h3>Thor: Amor e trovao (7 de julho de 2022)</h3>
+        <p class="paragrafo">Thor: Amor e Trovão é a quarta aventura solo do Thor (Chris Hemsworth) no Universo Cinematográfico Marvel e vai contar com o retorno de Taika Waititi na direção depois de Thor: Ragnarok. Na história, Thor deve enfrentar uma de suas maiores ameaças: Gorr, o Carniceiro de Deus, interpretado por Christian Bale. Teremos a volta de Jane Foster (Natalie Portman), agora empunhando o Mjölnir reparado e recebendo os poderes do Thor depois que o protagonista se torna indigno, além da presença dos Guardiões da Galáxia.</p><br>
+    <h3>Pantera Negra: Wakanda para sempre (10 DE NOVEMBRO DE 2022)</h3>
+        <p class="paragrafo">Pantera Negra: Wakanda Para Sempre é a aguardada continuação de Pantera Negra, dirigido por Ryan Coogler. O filme vai expandir a sociedade de Wakanda com o retorno de Shuri (Letitia Wright), Nakia (Lupita Nyong'o), Ramonda (Angela Bassett), Okoye (Danai Gurira) e M'Baku (Winston Duke). Depois da morte do ator Chadwick Boseman, que interpretava o protagonista rei T'Challa, foi confirmado que eles não vão reformular o personagem na sequência e ele nem mesmo vai surgir em CGI, como foi especulado.</p><br>
+    <h3> Homem Formiga e a Vespa: QUANTUMANIA (16 DE FEVEREIRO DE 2023)</h3>
+        <p class="paragrafo">Homem-Formiga e a Vespa: Quantumania continua acompanhando Scott Lang (Paul Rudd) e Hope van Dyne (Evangeline Lilly) depois de Homem-Formiga, Homem-Formiga e a Vespa e, claro, Vingadores: Ultimato. O filme terá como principal antagonista o vilão Kang, o Conquistador, interpretado por Jonathan Majors – sendo que uma variante dele, chamada "Aquele que Permanece" e também vivida por Majors, foi introduzida na série Loki. Kang provavelmente será o próximo grande vilão do MCU depois de Thanos, então o terceiro filme do Homem-Formiga deve ser bastante importante para a trama do multiverso.</p><br>
 
 
     </ul>
     
 
    </main>
-   <footer id="Rodape">
+   <footer id="rodape">
        <h4>Mapa do site</h4>
        <ul id="Mapa">
             <li><a href="index.html">Inicio</a></li>
